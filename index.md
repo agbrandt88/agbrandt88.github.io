@@ -17,3 +17,7 @@ Thank you for visiting my CS 499 Computer Science project ePortfolio!
 ## Software Design & Engineering
 
 [Software Design & Engineering](software-design-engineering.md)
+
+## Algorithms & Data Structures
+
+[Algorithms & Data Structures](algorithms-data-structures.md)
