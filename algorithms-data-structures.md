@@ -7,6 +7,12 @@ title: Algorithms & Data Structures
 
 ## Description
 
-[Link to Original Artifact]()
+## Justification
+
+[Link to Algorithms & Data Structures Enhancement]()
+
+## Reflection
+
+## References
 
 [Previous Page](index.md)
