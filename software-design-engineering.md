@@ -5,6 +5,8 @@ title: Software Design & Engineering
 
 # Software Design & Engineering
 
+[Link to Software Design & Engineering Enhancement](https://github.com/agbrandt88/CS-499/tree/main/Category%20One%20-%20Software%20Design)
+
 ## Description
 
 The artifact I chose for category one enhancement comes from previous coursework conducted in CS 360: Mobile Architecture and Programming.  Called Event Tracking App, this was one of the final project options we were given to pursue.  Event Tracking App is an Android application designed to allow users to create an account and track life events via an easy-to-use interface.  Created using Android Studio, with Java as the programming language, Event Tracking App leverages Room for local storage.  While fully functional, this project’s architectural setup and basic SMS implementation provides a large area for category one related improvements.
@@ -12,8 +14,6 @@ The artifact I chose for category one enhancement comes from previous coursework
 ## Justification
 
 I chose this project for improvement as it provides a great starting point for architectural/organizational enhancements.  Its initial form maintained a lot of app functionality on only a few class structures and did a poor job of organizing classes by specific capability.  To improve on this, I have applied a Model-View-ViewModel (MVVM) structure to Event Tracking App and broken up each function within those three categories.  Rather than each activity class maintaining multiple cross-application functions, they have been limited to UI view functionality.  Meanwhile, I have added three ViewModels for authentication/validation and event activity logic (loading, saving etc.).  While activities fall into View, ViewModels are the bridge between View and Model areas.  My intention by separating application functionality into MVVM categories has been to demonstrate skills in object-oriented design (OOD)/object-oriented programming (OOP).  Additional improvements have been made to remove direct database interaction from activity classes and create multiple threads supporting asynchronous work/responsiveness (Android Developers, n.d.).  Finally, I used category one as an opportunity to implement a functional worker class for SMS notifications as previously, while some of the WorkManager capability had been set up, notifications were not running in the background properly.
-
-[Link to Software Design & Engineering Enhancement](https://github.com/agbrandt88/CS-499/tree/main/Category%20One%20-%20Software%20Design)
 
 ## Reflection
 
