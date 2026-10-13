@@ -5,6 +5,8 @@ title: Databases
 
 # Databases
 
+[Link to Databases Enhancement](https://github.com/agbrandt88/CS-499/tree/main/Category%20Three%20-%20Databases)
+
 ## Description
 
 For this artifact I am continuing to improve upon the Event Tracking App previously developed during CS 360: Mobile Architecture & Programming.  When discussing application features related to the database category, Event Tracking App features use of Room as its primary means of storage.  Whether a user creates an account or populates new event cards into their home screen display, CRUD capability is supported by Room.  Its initial setup in the original artifact consists of a class for the database, two entities for user and event information, and data access objects (DAOs) which contain CRUD functionality.  While the database works in the original artifact, there are many areas that can be improved for better information storage, security, and query capability.
@@ -14,8 +16,6 @@ For this artifact I am continuing to improve upon the Event Tracking App previou
 The purpose of the applied category three enhancements was to keep Room in place, as I like its persistent storage features, while updating security and overall architecture.  Upon initial artifact review, one major weakness that stood out was the way passwords were being stored/maintained by the database.  Originally, all passwords were stored as plaintext, making them vulnerable to leaks should database integrity be compromised.  Post enhancement, all user input passwords are salted and hashed.  Salting a password means adding random characters to it, at which point password hashing occurs and converts it into a completely different set of characters (Owolabi, 2024).  Now in Event Tracking App, a user enters their password, SecureRandom creates the salt, and PBKDF2 uses the password plus salt to return a secure password hash.
 
 Other database improvements relate to data integrity storage improvements.  In Event Table, for example, I added a foreign key to tie each event to the user generating it.  Additionally, as to prevent orphaned records, this foreign key maintains a cascade deletion rule, meaning that if a user account is deleted so are all events associated with it.  Unique usernames are also now being enforced at the database level rather than just via application logic through an added index setup, and dates/times are now stored as epoch milliseconds vice strings for even more consistent data formatting.
-
-[Link to Databases Enhancement](https://github.com/agbrandt88/CS-499/tree/main/Category%20Three%20-%20Databases)
 
 ## Reflection
 
