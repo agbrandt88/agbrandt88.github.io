@@ -2,6 +2,14 @@
 layout: default
 ---
 
+## Navigation
+
+[Code Review](code-review.md)
+[Original Artifact](original-artifact.md)
+[Software Design & Engineering](software-design-engineering.md)
+[Algorithms & Data Structures](algorithms-data-structures.md)
+[Databases](datbases.md)
+
 ## Professional Self Assessment
 
 Working through a degree in computer science (CS) has been both a challenging and rewarding journey.  Each concept covered throughout the program has provided me with a wealth of knowledge, along with new practical skills I am excited to employ out in the field.  In addition to coding, our coursework has provided me with planning, design, and management skills that are vital to any CS project, as well as highly transferable elsewhere.  For example, the capstone project in particular required extensive planning.  Taking an already functional program and extending its capability in three separate but interconnected areas required me to carefully plan improvements, while mapping out each class/program area they affected.  This is because each affected area generally also required updating before project compilation was possible.
@@ -20,17 +28,17 @@ Learning and employing software security skills has taught me the importance of 
 
 ## Code Review
 
-[Code Review](code-review.md)
+[View Code Review](code-review.md)
 
 ## Original Artifact
 
-[Original Artifact](original-artifact.md)
+[View Original Artifact](original-artifact.md)
 
 The original artifact, Event Tracking App, in comparison to each enhancement, demonstrates the evolution of my skills as a programmer in three distinct areas.  Rather than using three different projects, my intention was to leverage one project and integrate in all enhancement areas.  I believe that by doing this it better showcases my ability to make project improvements while factoring how each change impacts the broader application.  The original Event Tracking App artifact provides users with an easy-to-use interface for logging in and creating/monitoring real life events.  It leans on Room for persistent data storage and was built in Android Studio using Java.  While the original artifact was fully functional, it left major room for improvements in the areas of software design/engineering, DSA, and database implementation.
 
 ## Software Design & Engineering
 
-[Software Design & Engineering](software-design-engineering.md)
+[View Software Design and Engineering Enhancement & Narrative](software-design-engineering.md)
 
 Software design/engineering has been improved mainly through separating out all application functions by responsibility via a MVVM setup.  Areas having to do with UI are in the view portion, while the database itself is in model.  Communication between these two application sections happens within ViewModel classes.  For example, users attempting to add an event create inputs through AddEventActivity (view).  From here, event information is passed to EditEventViewModel for input validation and conflict screening (ViewModel).  Once validated, this ViewModel leverages EventRepository’s ability to communicate with EventDao and the database.  This is one of many processes that enhance Event Tracking App’s overall organizational structure.  Of note, database communication is done via asynchronous programming practices, allowing for application multitasking and thus better performance.
 
@@ -38,7 +46,7 @@ Another update made during this first round of enhancements was to Event Trackin
 
 ## Algorithms & Data Structures
 
-[Algorithms & Data Structures](algorithms-data-structures.md)
+[View Algorithms and Data Structures Enhancement & Narrative](algorithms-data-structures.md)
 
 Algorithms and data structures have been added to enhance Event Tracking App’s ability to store, structure, and access user data.  A TreeSet and HashMap now support both event organization and the user’s ability to quickly look up information.  While only one data structure was necessary, both are more beneficial as they each serve separate functions.  The TreeSet orders events based on start time and supports efficient big O notation numbers and, because of this ordering, allows follow-on events to be added much faster.  The HashMap bolsters the user’s ability to directly access specific events thanks to storing data using key-value pairs.
 
@@ -46,7 +54,7 @@ In addition to these data structures is an algorithm which checks for conflictin
 
 ## Databases
 
-[Databases](databases.md)
+[View Database Enhancement & Narrative](databases.md)
 
 Multiple database and security updates have been added while maintaining the original Room structure for persistent storage.  Starting with the creation of accounts, an index has been added that enforces unique username storage.  Additionally, foreign keys have been added to EventTable to tie all events to the user that created them.  This feature ensures records don’t become orphaned and remain in the database.  Cascade has also been added here, where upon account deletion, all associated events are also deleted.  These changes demonstrate a focus on data integrity and database organization.
 
