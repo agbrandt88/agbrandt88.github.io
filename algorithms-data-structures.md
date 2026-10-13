@@ -5,6 +5,8 @@ title: Algorithms & Data Structures
 
 # Algorithms & Data Structures
 
+[Link to Algorithms & Data Structures Enhancement](https://github.com/agbrandt88/CS-499/tree/main/Category%20Two%20-%20Algorithms%20%26%20Data%20Structures)
+
 ## Description
 
 As with Milestone two, I have chosen to work with the CS 360: Mobile Architecture & Programming final project as my artifact.  Titled Event Tracking App, this is a program built in Android Studio, using the Java programming language, that allows users to schedule and track events through an easy-to-use UI.  In addition to CRUD capability, Event Tracking App provides the ability to schedule SMS notifications.  In its original state, this application relied on list and database functionality for basic sorting, however there was no algorithm in place for both managing events and preventing overlap.
@@ -12,8 +14,6 @@ As with Milestone two, I have chosen to work with the CS 360: Mobile Architectur
 ## Justification
 
 This artifact provided a great platform for category two improvements as most of its original event ordering came from an SQL ORDER BY query.  To meet artifact improvement criteria, I have implemented a data structure and algorithm combination that supports event data organization and demonstrates the ability to program with Big O notation in mind.  Whereas before there was no algorithm in place, I added an entire Event Scheduler class that leverages both data structures to ensure one event does not overlap with another.  This class works with a TreeSet for event ordering, and a HashMap for looking up events by ID.  The algorithm itself required the addition of both start and end event times as a means of preventing scheduling conflicts prior to storage.  In addition to ensuring event entries are consistent across both structures and Room itself, the provision of these new tools greatly improves data accessibility and application performance.  For example, using HashMap for finding events by ID receives an O (1) for Big O notation, while creating an event and placing it into the TreeSet organizational structure receives an O (log n).  As with category one, this category allowed me to focus on performance and memory improvements rather than just making something operational.
-
-[Link to Algorithms & Data Structures Enhancement](https://github.com/agbrandt88/CS-499/tree/main/Category%20Two%20-%20Algorithms%20%26%20Data%20Structures)
 
 ## Reflection
 
