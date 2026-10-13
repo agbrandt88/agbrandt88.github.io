@@ -30,6 +30,8 @@ Learning and employing software security skills has taught me the importance of 
 
 [View Code Review](https://drive.google.com/file/d/1PXDLzyTDrvL_qKqcfVia4bqAH2dSXsCA/view?usp=sharing)
 
+<img src="assets/images/code-review.png" alt="Code Review" width="200">
+
 This code review provides a thorough evaluation of Event Tracking App in its initial variant, to include a walkthrough of original functionality.  Part two moves into an analysis of application structure, strengths, and areas with room for improvement. Part three discusses all intended enhancements in the categories of software design & engineering, algorithms and data structures, and databases.
 
 ## Original Artifact
@@ -64,7 +66,7 @@ In addition to these data structures is an algorithm which checks for conflictin
 
 Multiple database and security updates have been added while maintaining the original Room structure for persistent storage.  Starting with the creation of accounts, an index has been added that enforces unique username storage.  Additionally, foreign keys have been added to EventTable to tie all events to the user that created them.  This feature ensures records don’t become orphaned and remain in the database.  Cascade has also been added here, where upon account deletion, all associated events are also deleted.  These changes demonstrate a focus on data integrity and database organization.
 
-<img src="assets/images/Project-Database-Plan.jpeg" alt="Database Structure" width="200">
+<img src="assets/images/Project-Database-Plan.jpeg" alt="Database Structure" width="300">
 
 Formatting changes have also been made to the data itself.  All event times, for example, are now converted to epoch milliseconds before being stored in the database.  When the user wants to view an event, this data is converted back to a readable format.  Additionally, password formatting has been completely overhauled in the interest of secure programming best practices.  When a user creates an account and enters a password, SecureRandom creates a salt, or random set of characters.  Then, PBKDF2 uses the password and salt to create a one-way secure hash.  In keeping with the theme of creating updates that improve underlying application capability, hardening Event Tracking App’s ability to store data at rest leverages skills in cryptography and overall software security.
 
