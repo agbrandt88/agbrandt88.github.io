@@ -62,4 +62,4 @@ Multiple database and security updates have been added while maintaining the ori
 
 Formatting changes have also been made to the data itself.  All event times, for example, are now converted to epoch milliseconds before being stored in the database.  When the user wants to view an event, this data is converted back to a readable format.  Additionally, password formatting has been completely overhauled in the interest of secure programming best practices.  When a user creates an account and enters a password, SecureRandom creates a salt, or random set of characters.  Then, PBKDF2 uses the password and salt to create a one-way secure hash.  In keeping with the theme of creating updates that improve underlying application capability, hardening Event Tracking App’s ability to store data at rest leverages skills in cryptography and overall software security.
 
-![Password Testing](assets/images/Password2.png)
+![Password Testing](assets/images/Passwords2.png)
