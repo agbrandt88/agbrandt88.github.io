@@ -38,7 +38,7 @@ This code review provides a thorough evaluation of Event Tracking App in its ini
 
 [View Original Artifact](https://github.com/agbrandt88/CS-499/tree/main/Original%20Artifact%20-%20%20Event%20Tracking%20App)
 
-<img align="left" width="200" src="assets/images/UI.png" alt="Event Page" />
+<img align="left" width="100" src="assets/images/UI.png" alt="Event Page" />
 
 The original artifact, Event Tracking App, in comparison to each enhancement, demonstrates the evolution of my skills as a programmer in three distinct areas.  Rather than using three different projects, my intention was to leverage one project and integrate in all enhancement areas.  I believe that by doing this it better showcases my ability to make project improvements while factoring how each change impacts the broader application.  The original Event Tracking App artifact provides users with an easy-to-use interface for logging in and creating/monitoring real life events.  It leans on Room for persistent data storage and was built in Android Studio using Java.  While the original artifact was fully functional, it left major room for improvements in the areas of software design/engineering, DSA, and database implementation.
 
@@ -56,7 +56,7 @@ Another update made during this first round of enhancements was to Event Trackin
 
 Algorithms and data structures have been added to enhance Event Tracking App’s ability to store, structure, and access user data.  A TreeSet and HashMap now support both event organization and the user’s ability to quickly look up information.  While only one data structure was necessary, both are more beneficial as they each serve separate functions.  The TreeSet orders events based on start time and supports efficient big O notation numbers and, because of this ordering, allows follow-on events to be added much faster.  The HashMap bolsters the user’s ability to directly access specific events thanks to storing data using key-value pairs.
 
-<img align="left" width="200" src="assets/images/UI2.png" alt="Add Event Page" />
+<img align="left" width="100" src="assets/images/UI2.png" alt="Add Event Page" />
 
 In addition to these data structures is an algorithm which checks for conflicting events prior to allowing the user to generate additions or updates.  During the event creation process, potential conflicts are screened using the organizational structure of the TreeSet.  If no conflicts are found between the previous and next event surrounding the one being added, the intended event is created.  My intention with these additions is to demonstrate a solid understanding of big O notation and application performance optimization.
 
@@ -64,9 +64,9 @@ In addition to these data structures is an algorithm which checks for conflictin
 
 [View Database Enhancement & Narrative](databases.md)
 
-Multiple database and security updates have been added while maintaining the original Room structure for persistent storage.  Starting with the creation of accounts, an index has been added that enforces unique username storage.  Additionally, foreign keys have been added to EventTable to tie all events to the user that created them.  This feature ensures records don’t become orphaned and remain in the database.  Cascade has also been added here, where upon account deletion, all associated events are also deleted.  These changes demonstrate a focus on data integrity and database organization.
+<img align="left" width="250" src="assets/images/Project-Database-Plan.jpeg" alt="Database Structure" />
 
-<img align="left" width="350" src="assets/images/Project-Database-Plan.jpeg" alt="Database Structure" />
+Multiple database and security updates have been added while maintaining the original Room structure for persistent storage.  Starting with the creation of accounts, an index has been added that enforces unique username storage.  Additionally, foreign keys have been added to EventTable to tie all events to the user that created them.  This feature ensures records don’t become orphaned and remain in the database.  Cascade has also been added here, where upon account deletion, all associated events are also deleted.  These changes demonstrate a focus on data integrity and database organization.
 
 Formatting changes have also been made to the data itself.  All event times, for example, are now converted to epoch milliseconds before being stored in the database.  When the user wants to view an event, this data is converted back to a readable format.  Additionally, password formatting has been completely overhauled in the interest of secure programming best practices.  When a user creates an account and enters a password, SecureRandom creates a salt, or random set of characters.  Then, PBKDF2 uses the password and salt to create a one-way secure hash.  In keeping with the theme of creating updates that improve underlying application capability, hardening Event Tracking App’s ability to store data at rest leverages skills in cryptography and overall software security.
 
