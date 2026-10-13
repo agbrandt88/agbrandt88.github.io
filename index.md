@@ -5,7 +5,7 @@ layout: default
 ## Navigation
 
 - [Code Review](https://drive.google.com/file/d/1PXDLzyTDrvL_qKqcfVia4bqAH2dSXsCA/view?usp=sharing)
-- [Original Artifact](original-artifact.md)
+- [Original Artifact](https://github.com/agbrandt88/CS-499/tree/main/Original%20Artifact%20-%20%20Event%20Tracking%20App)
 - [Software Design & Engineering](software-design-engineering.md)
 - [Algorithms & Data Structures](algorithms-data-structures.md)
 - [Databases](datbases.md)
@@ -32,7 +32,7 @@ Learning and employing software security skills has taught me the importance of 
 
 ## Original Artifact
 
-[View Original Artifact](original-artifact.md)
+[View Original Artifact](https://github.com/agbrandt88/CS-499/tree/main/Original%20Artifact%20-%20%20Event%20Tracking%20App)
 
 The original artifact, Event Tracking App, in comparison to each enhancement, demonstrates the evolution of my skills as a programmer in three distinct areas.  Rather than using three different projects, my intention was to leverage one project and integrate in all enhancement areas.  I believe that by doing this it better showcases my ability to make project improvements while factoring how each change impacts the broader application.  The original Event Tracking App artifact provides users with an easy-to-use interface for logging in and creating/monitoring real life events.  It leans on Room for persistent data storage and was built in Android Studio using Java.  While the original artifact was fully functional, it left major room for improvements in the areas of software design/engineering, DSA, and database implementation.
 
