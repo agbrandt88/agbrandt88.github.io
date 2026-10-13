@@ -38,7 +38,7 @@ This code review provides a thorough evaluation of Event Tracking App in its ini
 
 [View Original Artifact](https://github.com/agbrandt88/CS-499/tree/main/Original%20Artifact%20-%20%20Event%20Tracking%20App)
 
-<img src="assets/images/UI.png" alt="Event Page" style="float: left; margin-right: 20px; width: 150px;" />
+<img src="assets/images/UI.png" alt="Event Page" style="float: left; margin-right: 20px; width: 100px;" />
 
 The original artifact, Event Tracking App, in comparison to each enhancement, demonstrates the evolution of my skills as a programmer in three distinct areas.  Rather than using three different projects, my intention was to leverage one project and integrate in all enhancement areas.  I believe that by doing this it better showcases my ability to make project improvements while factoring how each change impacts the broader application.  The original Event Tracking App artifact provides users with an easy-to-use interface for logging in and creating/monitoring real life events.  It leans on Room for persistent data storage and was built in Android Studio using Java.  While the original artifact was fully functional, it left major room for improvements in the areas of software design/engineering, DSA, and database implementation.
 
@@ -54,7 +54,7 @@ Another update made during this first round of enhancements was to Event Trackin
 
 [View Algorithms and Data Structures Enhancement & Narrative](algorithms-data-structures.md)
 
-<img src="assets/images/UI2.png" alt="Add Event Page" style="float: left; margin-right: 20; width: 150;" />
+<img src="assets/images/UI2.png" alt="Add Event Page" style="float: left; margin-right: 20px; width: 150px;" />
 
 Algorithms and data structures have been added to enhance Event Tracking App’s ability to store, structure, and access user data.  A TreeSet and HashMap now support both event organization and the user’s ability to quickly look up information.  While only one data structure was necessary, both are more beneficial as they each serve separate functions.  The TreeSet orders events based on start time and supports efficient big O notation numbers and, because of this ordering, allows follow-on events to be added much faster.  The HashMap bolsters the user’s ability to directly access specific events thanks to storing data using key-value pairs.
 
@@ -64,7 +64,7 @@ In addition to these data structures is an algorithm which checks for conflictin
 
 [View Database Enhancement & Narrative](databases.md)
 
-<img src="assets/images/Project-Database-Plan.jpeg" alt="Database" style="float: left; margin-right: 20; width: 250;" />
+<img src="assets/images/Project-Database-Plan.jpeg" alt="Database" style="float: left; margin-right: 20px; width: 250px;" />
 
 Multiple database and security updates have been added while maintaining the original Room structure for persistent storage.  Starting with the creation of accounts, an index has been added that enforces unique username storage.  Additionally, foreign keys have been added to EventTable to tie all events to the user that created them.  This feature ensures records don’t become orphaned and remain in the database.  Cascade has also been added here, where upon account deletion, all associated events are also deleted.  These changes demonstrate a focus on data integrity and database organization.
 
