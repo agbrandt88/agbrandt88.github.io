@@ -4,11 +4,11 @@ layout: default
 
 ## Navigation
 
-[Code Review](code-review.md)
-[Original Artifact](original-artifact.md)
-[Software Design & Engineering](software-design-engineering.md)
-[Algorithms & Data Structures](algorithms-data-structures.md)
-[Databases](datbases.md)
+- [Code Review](https://drive.google.com/file/d/1PXDLzyTDrvL_qKqcfVia4bqAH2dSXsCA/view?usp=sharing)
+- [Original Artifact](original-artifact.md)
+- [Software Design & Engineering](software-design-engineering.md)
+- [Algorithms & Data Structures](algorithms-data-structures.md)
+- [Databases](datbases.md)
 
 ## Professional Self Assessment
 
@@ -28,7 +28,7 @@ Learning and employing software security skills has taught me the importance of 
 
 ## Code Review
 
-[View Code Review](code-review.md)
+[View Code Review](https://drive.google.com/file/d/1PXDLzyTDrvL_qKqcfVia4bqAH2dSXsCA/view?usp=sharing)
 
 ## Original Artifact
 
