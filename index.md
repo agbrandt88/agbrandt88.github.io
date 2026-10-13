@@ -8,7 +8,7 @@ layout: default
 - [Original Artifact](https://github.com/agbrandt88/CS-499/tree/main/Original%20Artifact%20-%20%20Event%20Tracking%20App)
 - [Software Design & Engineering](software-design-engineering.md)
 - [Algorithms & Data Structures](algorithms-data-structures.md)
-- [Databases](datbases.md)
+- [Databases](databases.md)
 
 ## Professional Self Assessment
 
@@ -29,6 +29,8 @@ Learning and employing software security skills has taught me the importance of 
 ## Code Review
 
 [View Code Review](https://drive.google.com/file/d/1PXDLzyTDrvL_qKqcfVia4bqAH2dSXsCA/view?usp=sharing)
+
+This code review provides a thorough evaluation of Event Tracking App in its initial variant, to include a walkthrough of original functionality.  Part two moves into an analysis of application structure, strengths, and areas with room for improvement. Part three discusses all intended enhancements in the categories of software design & engineering, algorithms and data structures, and databases.
 
 ## Original Artifact
 
