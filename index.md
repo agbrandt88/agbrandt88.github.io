@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Adam's ePortfolio
-
 ## Professional Self Assessment
 
 Working through a degree in computer science (CS) has been both a challenging and rewarding journey.  Each concept covered throughout the program has provided me with a wealth of knowledge, along with new practical skills I am excited to employ out in the field.  In addition to coding, our coursework has provided me with planning, design, and management skills that are vital to any CS project, as well as highly transferable elsewhere.  For example, the capstone project in particular required extensive planning.  Taking an already functional program and extending its capability in three separate but interconnected areas required me to carefully plan improvements, while mapping out each class/program area they affected.  This is because each affected area generally also required updating before project compilation was possible.
